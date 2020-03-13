@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hubble</title>
+    <style type="text/css">
+        body {
+            background-color: grey;
+            color: white;
+            font-family: Helvetica;
+        }
+        
+        strong {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //Username and text
+        var User = prompt("Please indicate your name");
+        document.write("<p>Hello <strong>" + User + "</strong>.</p>This is the <strong>Solar system weight calcluator</strong>.</p><p>Before using, please remember the difference between <strong>mass</strong> and <strong>weight</strong>:</p><p><strong>Mass</strong> is the quantity of <strong>matter</strong> measured in <strong>kilograms</strong>.</p><p><strong>Weight</strong> is a vector of <strong>strenght</strong> measured in <strong>newtons</strong>.</p><p>Objects may weight different on different celestial bodies, but their mass always remains the same.</p><p>The <strong>Solar system wight calcluator</strong> does not calculate mass.</p>");
+        //User mass
+        var Mass = prompt("Please indicate your mass in kilograms");
+        //Chosen celestial body
+        var CeBo = prompt("Please choose one of these celestial bodies.\n Write the name exactly as displayed:");
+        //Conditionals and calculations using the equation for weight: W=Mass*Gravitational field intensity.
+        if (CeBo == "Sun") {
+            var Result = Mass * 273.7;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Mercury") {
+            var Result = Mass * 3.7;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Venus") {
+            var Result = Mass * 8.85;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Earth") {
+            var Result = Mass * 9.81;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Moon") {
+            var Result = Mass * 1.62;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Mars") {
+            var Result = Mass * 3.72;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Phobos") {
+            var Result = Mass * 0.0019;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Deimos") {
+            var Result = Mass * 0.0039;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Jupiter") {
+            var Result = Mass * 26.39;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Saturn") {
+            var Result = Mass * 11.67;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Uranus") {
+            var Result = Mass * 11.43;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Neptune") {
+            var Result = Mass * 11.07;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else if (CeBo == "Pluto") {
+            var Result = Mass * 0.6;
+            var Result = parseInt(Result);
+            alert("Your aproximate weight on " + CeBo + " is " + Result + " N");
+        } else {
+            alert("Error");
+        }
+        var Mass = parseFloat(Mass);
+        //Result display
+    </script>
+</body>
+
+</html>

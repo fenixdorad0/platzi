@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mi primera página </title>
+  <style type="text/css">
+  body
+  {
+    background-color: rgb(92, 104, 219);
+    color: rgb(255, 255, 255);
+    font-family: Helvetica; 
+  }
+  strong 
+  {
+    background-color:rgb(137, 228, 62);
+  }
+  </style>
+</head>
+
+<body>
+  <p>
+    Qué es hola ? El significado de hola quiere decir "saludo" en español.
+    Se considera un saludo informal, usado con familiares y amigos. Se dice que est
+    e término está relacionado con "hello" ( hola en inglés ) y "halo" ( hola en Alemán ).
+  </p>
+
+  <p>
+    <strong>Parrafo 1</strong> esta es una guía
+  </p>
+
+  <p> La gravedad en la tierra 9.8 m/s 2 Vamos hacer ahora nuestro peso es: </p>
+
+  <script type="text/javascript">
+    var gravedad_tierra =9.854864168461548;
+    var gravedad_marte= 3.7;  
+    var gravedad_jupiter = 24.8; 
+    var peso = prompt("cual es tu peso");
+    peso=parseFloat(peso);
+    var cuanto_pesamos_marte=(peso*gravedad_marte)/gravedad_tierra;
+    document.write(cuanto_pesamos_marte);
+    var cuanto_pesamos_jupiter =(peso*gravedad_jupiter)/gravedad_tierra;
+    cuanto_pesamos_jupiter = parseFloat(cuanto_pesamos_jupiter);
+    
+    document.write("<br> El peso mio en jupiter es :<strong>" + cuanto_pesamos_jupiter + " kilogramos </strong>");
+    
+
+  </script>
+  
+</body>
+
+
+</html>

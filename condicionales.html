@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Condicionales en Java Script </title>
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var g_Tierra = 9.8;
+        var g_Jupiter = 24.8;
+        var g_Marte = 3.7;
+        var planeta = prompt("¿Qué planeta desea 1 Marte, 2 Jupiter");
+        var peso = parseFloat(prompt("cual es su peso"));
+        var peso_del_planeta = 0;
+        if (planeta == "1") {
+            peso_del_planeta = (peso * g_Marte) / g_Tierra;
+        } else if (planeta == "2") {
+            peso_del_planeta = (peso * g_Jupiter) / g_Tierra;
+        } else {
+            peso_del_planeta = "no sea tarado no ve que solo hay 1 o 2 :/";
+        }
+
+        document.write("Usted pesa en el planeta escojido es:" + peso_del_planeta);
+    </script>
+</body>
+
+
+
+
+</html>
